@@ -4,7 +4,6 @@ import (
 	"os"
 	"testing"
 
-	_ "github.com/mattn/go-sqlite3"
 	"github.com/stretchr/testify/assert"
 	"github.com/vitorath/clean-architecture-golang/adapter/repository/fixtures"
 )
