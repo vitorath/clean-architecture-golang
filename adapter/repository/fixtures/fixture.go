@@ -1,4 +1,4 @@
-package fixture
+package fixtures
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 )
 
 func Up(migrationsDir fs.FS) *sql.DB {
-	db, err := sql.Open("sqlite3", ":memory")
+	db, err := sql.Open("sqlite3", "../../.sqlite3")
 	if err != nil {
 		log.Fatal(err)
 	}
